@@ -194,11 +194,6 @@ table.schedule a:hover {
       flex-direction: column !important;
   }
   
-  /* Make instructor section responsive */
-  .course-info ul {
-      padding-left: 20px !important;
-  }
-  
   /* Make teaching team cards responsive - stack on mobile */
   div[style*="grid-template-columns: repeat(3, 1fr)"] {
       grid-template-columns: 1fr !important;
