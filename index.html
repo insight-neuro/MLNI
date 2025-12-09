@@ -10,462 +10,385 @@
 <body style="padding-bottom: 40px;">
     
     <!-- Header -->
-    <div class="container" style="">
-        <!-- Hero Banner with Brain Image -->
-        <div class="hero-banner" style="width: 70%; position: relative; margin: auto; max-width: 100%;">
-            <img src="https://www.nih.gov/sites/default/files/2025-03/20210512-brain.jpg" alt="Brain illustration" style="width: 100%; height: auto; display: block; margin: 0;">
-            <div style="position: absolute; bottom: 0px; right: 0px; color: rgb(0, 0, 0); padding: 8px 12px; font-size: 0.75em; border-radius: 4px;">
-                Image Credit: <a href="https://www.nih.gov/sites/default/files/2025-03/20210512-brain.jpg" style="color: #000000; text-decoration: underline;">Shenoy Lab & Erica Woodrum (artist)</a>
+    <div class="container" style="margin-top: 10px;">
+        <div class="col-md-11 col-md-offset-0" style="margin: 0 auto; float: none;">
+            <!-- Hero Section with Banner and Course Info Side by Side -->
+            <div class="hero-section" style="display: flex; gap: 30px; align-items: flex-start; margin-bottom: 30px;">
+                <!-- Hero Banner with Brain Image -->
+                <div class="hero-banner" style="flex: 0 0 40%; position: relative;">
+                    <img src="https://www.nih.gov/sites/default/files/2025-03/20210512-brain.jpg" alt="Brain illustration" style="width: 100%; height: auto; display: block; margin: 0;">
+                    <div style="position: absolute; bottom: 0px; right: 0px; color: rgb(0, 0, 0); padding: 8px 12px; font-size: 0.65em; border-radius: 4px;">
+                        Image Credit: <a href="https://www.nih.gov/news-events/nih-research-matters/system-uses-imagined-handwriting-turn-thoughts-into-text" style="color: #000000; text-decoration: underline;" target="_blank" rel="noopener noreferrer">Shenoy Lab & Erica Woodrum (artist)</a>
+                    </div>
+                </div>
+                
+                <!-- Course Info -->
+                <div class="course-info" style="flex: 1;">
+                    <h2 style="margin-top: 0; margin-bottom: 10px; font-size: 2em;"><strong>Machine Learning for Neural Interfaces</strong></h2>
+                    <p class="lead" style="margin-bottom: 8px; font-size: 1.2em;"><strong>6.S914: MIT IAP 2026 Special Subject</strong></p>
+                    
+                    <!-- Navigation Menu -->
+                    <div style="margin-bottom: 12px; font-size: 1em;">
+                        <a href="#schedule" style="color: #0076C0; text-decoration: none; font-weight: 500;">Schedule</a>
+                        <span style="margin: 0 8px; color: #666;">|</span>
+                        <!-- <a href="https://canvas.mit.edu" target="_blank" rel="noopener noreferrer" style="color: #0076C0; text-decoration: none; font-weight: 500;">Canvas</a> -->
+                        <span style="color: #888; font-weight: 500;">Canvas (upcoming)</span>
+                        <!-- <span style="margin: 0 8px; color: #666;">|</span>
+                        <a href="https://www.youtube.com/@mitocw" target="_blank" rel="noopener noreferrer" style="color: #0076C0; text-decoration: none; font-weight: 500;">YouTube</a> -->
+                    </div>
+                    
+                    <ul style="list-style: none; padding-left: 0; line-height: 1.5; font-size: 1em;">
+                        <li><strong>Dates:</strong> Monday, January 19 – Friday, January 23, 2026, 10 AM–12 PM</li>
+                        <li><strong>Location:</strong> MIT campus, classroom TBD</li>
+                        <!-- <li><strong>Grading:</strong> P/D/F</li> -->
+                        <li><a href="https://student.mit.edu/cgi-docs/shrwstop.html" style="margin-top:10px; display: inline-block; background-color: #0076C0; color: white; padding: 4px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1em; transition: background-color 0.3s ease; box-shadow: 0 2px 4px rgba(0,118,192,0.2);" onmouseover="this.style.backgroundColor='#005a96'" onmouseout="this.style.backgroundColor='#0076C0'">MIT students: Pre-register for MLNI now &rarr;</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <style>
-        @media (max-width: 600px) {
-            .hero-banner {
-                width: 100% !important;
-            }
-        }
-        </style>
-        
-        <div class="col-md-10 col-md-offset-1">
-            <h1>6.S194 Machine Learning for Neural Interfaces</h1>
-            <p class="lead"><strong>MIT IAP 2026 Special Subject</strong></p>
-            <p><strong>Dates:</strong> Monday, January 19 – Friday, January 23, 2026, 10 AM–12 PM<br>
-            <strong>Location:</strong> MIT campus, classroom TBD<br>
-            <strong>Grading:</strong> P/D/F</p>
+            
+            <!-- Course Description -->
+            <div style="margin-top: 10px; margin-bottom: 10px;">
+                <h3>Course Description</h3>
+                <p style="text-align: justify; font-size: 16px; line-height: 1.3;">
+                    This course explores the intersection of machine learning and human neural interfaces. How can ML techniques be used to decode and modulate neural activity in the human brain? Introduces students to the emerging field of brain foundation models. Topics include: basics of electrophysiology and neural recording, self-supervised learning for brain signals, neural decoding models, closed-loop stimulation design, and ethical considerations in brain-computer interfaces. Focuses heavily on direct electrical recording and stimulation of the human brain (using microelectrodes, EEG, sEEG, ECoG). Features guest talks by researchers and practitioners. Students will gain hands-on experience working with real human neural datasets and learn to build models that can interpret and potentially enhance human neural activity. Suitable for students with a background in machine learning. Assignments focus on analyzing neural data and culminate with a final project research proposal.
+                </p>
+            </div>
             
             <!-- Instructors Section -->
-            <div style="margin-top: 30px;">
-                <h3>Instructors & Teaching Team</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px;">
+            <div style="margin-top: 10px;">
+                <h3>Teaching Team</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 20px;">
                     <!-- Andrii Zahorodnii -->
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <a href="https://azaho.org" target="_blank" rel="noopener noreferrer">
-                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEZPM6kSf-aJA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683596897214?e=1766620800&v=beta&t=jam368yR12V3QJkVRMuxifY61QcvlP11U7tmVEGmZSQ" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://azaho.org" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEZPM6kSf-aJA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683596897214?e=1766620800&v=beta&t=jam368yR12V3QJkVRMuxifY61QcvlP11U7tmVEGmZSQ" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
                         </a>
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;"><a href="https://azaho.org" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Andrii Zahorodnii</a></p>
-                        <p style="margin-top: 0; font-size: 0.8em; color: #666;">Instructor</p>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://azaho.org" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Andrii Zahorodnii</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Instructor</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">M.Eng. at MIT in Neuroscience & Machine Learning; Research Fellow, Beth Israel Deaconess Medical Center</p>
+                        </div>
                     </div>
                     
                     <!-- Kate Shapovalenko -->
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <a href="https://www.linkedin.com/in/kateryna-shapovalenko-72541b125/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFdH10E87oUZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666578447614?e=1766620800&v=beta&t=kafSZxlzwTyxY8Cn2rT-Coacr_0qmSDUAywZq67Nmrw" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://www.linkedin.com/in/kateryna-shapovalenko-72541b125/" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFdH10E87oUZQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1666578447614?e=1766620800&v=beta&t=kafSZxlzwTyxY8Cn2rT-Coacr_0qmSDUAywZq67Nmrw" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
                         </a>
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;"><a href="https://www.linkedin.com/in/kateryna-shapovalenko-72541b125/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Kate Shapovalenko</a></p>
-                        <p style="margin-top: 0; font-size: 0.8em; color: #666;">Guest Co-Instructor</p>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://www.linkedin.com/in/kateryna-shapovalenko-72541b125/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Kate Shapovalenko</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Guest Co-Instructor</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">GenAI Project Manager, Meta; Former Research Engineer, Synchron</p>
+                        </div>
                     </div>
                     
                     <!-- Rishi Shiv -->
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <a href="https://www.linkedin.com/in/rishishiv/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFTBzeEpdZy7A/profile-displayphoto-crop_800_800/B56ZkRmMI5IAAI-/0/1756936848522?e=1766620800&v=beta&t=C_WoEe1OJOiSvW406VUr-p_19ElOUOGF9KRtlwnvOfU" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://www.linkedin.com/in/rishishiv/" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFTBzeEpdZy7A/profile-displayphoto-crop_800_800/B56ZkRmMI5IAAI-/0/1756936848522?e=1766620800&v=beta&t=C_WoEe1OJOiSvW406VUr-p_19ElOUOGF9KRtlwnvOfU" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
                         </a>
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;"><a href="https://www.linkedin.com/in/rishishiv/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Rishi Shiv</a></p>
-                        <p style="margin-top: 0; font-size: 0.8em; color: #666;">Teaching Assistant</p>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://www.linkedin.com/in/rishishiv/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Rishi Shiv</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Teaching Assistant</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">Undergraduate, MIT EECS & Physics; Student Researcher, MIT Media Lab</p>
+                        </div>
                     </div>
                     
                     <!-- Prof. Ila Fiete -->
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="https://simons.berkeley.edu/sites/default/files/styles/post_card_lg_2x/public/ilafiete.jpg?h=35515349&itok=UBoXbVqS" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Prof. Ila Fiete</p>
-                        <p style="margin-top: 0; font-size: 0.8em; color: #666;">Faculty Sponsor</p>
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://mcgovern.mit.edu/profile/ila-fiete/" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://simons.berkeley.edu/sites/default/files/styles/post_card_lg_2x/public/ilafiete.jpg?h=35515349&itok=UBoXbVqS" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                        </a>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://mcgovern.mit.edu/profile/ila-fiete/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Prof. Ila Fiete</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Faculty Sponsor</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">Associate Investigator, McGovern Institute; Professor, Brain and Cognitive Sciences, MIT; Director, K. Lisa Yang ICoN Center</p>
+                        </div>
                     </div>
                     
                     <!-- Prof. Boris Katz -->
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="https://cbmm.mit.edu/sites/default/files/styles/people_180x180/public/people/katz_az.jpg?itok=5Xgb2BgO" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Prof. Boris Katz</p>
-                        <p style="margin-top: 0; font-size: 0.8em; color: #666;">Faculty Sponsor</p>
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://people.csail.mit.edu/boris/boris.html" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://cbmm.mit.edu/sites/default/files/styles/people_180x180/public/people/katz_az.jpg?itok=5Xgb2BgO" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                        </a>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://people.csail.mit.edu/boris/boris.html" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Prof. Boris Katz</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Faculty Sponsor</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">Professor, MIT CSAIL; Principal Research Scientist; Head of InfoLab Group</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Joshua Aronson -->
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://www.linkedin.com/in/joshua-aronson-md-faans-26571318/" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQGP15VBaa8UAQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1678820933535?e=1766620800&v=beta&t=hq4m3j0gd9w-PhlHOTf0aLQBn1f2c2QYc2FLFpYqd9M" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                        </a>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://www.linkedin.com/in/joshua-aronson-md-faans-26571318/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Joshua Aronson, MD</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Guest Speaker</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">Director of Epilepsy Surgery, Beth Israel Deaconess Medical Center; Assistant Professor, Harvard Medical School</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Peter Yoo -->
+                    <div style="display: flex; gap: 8px; align-items: flex-start; padding: 4px;">
+                        <a href="https://www.linkedin.com/in/petereliyoo/" target="_blank" rel="noopener noreferrer" style="flex-shrink: 0;">
+                            <img src="https://media.licdn.com/dms/image/v2/C5603AQFJBMGdm_PYbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1628334670605?e=1766620800&v=beta&t=yomB0b3BNCploHvF8a2pD1xkBUCoOB9ZvxcC1lT9jbk" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid #0076C0;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
+                        </a>
+                        <div style="flex: 1; min-width: 0;">
+                            <p style="margin: 0; font-size: 1.05em; font-weight: bold;"><a href="https://www.linkedin.com/in/petereliyoo/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Peter Yoo</a></p>
+                            <p style="margin: 0; font-size: 0.9em; color: #0076C0; font-weight: 600;">Guest Speaker</p>
+                            <p style="margin: 0; font-size: 0.85em; color: #666; line-height: 1.2;">Head of Neuroscience & Algorithms, Synchron</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!--
-            <div style="margin-top: 40px;">
-                <h3>Guest Speakers</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px;">
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="joshua_aronson_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Dr. Joshua Aronson</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">Day 1</p>
-                    </div>
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="chris_wang_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Chris Wang</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">MIT, Day 2</p>
-                    </div>
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="neuralink_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Neuralink</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">Day 2</p>
-                    </div>
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="synchron_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Synchron</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">Day 3</p>
-                    </div>
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="meta_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Meta</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">Day 3</p>
-                    </div>
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="nataliya_kosmyna_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Dr. Nataliya Kosmyna</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">Day 4</p>
-                    </div>
-                    
-                    <div style="text-align: center; flex: 0 0 120px;">
-                        <img src="precision_picture.jpg" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #666;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23333%22/%3E%3C/svg%3E'">
-                        <p style="margin-top: 8px; font-size: 0.9em; font-weight: bold;">Precision Neuroscience</p>
-                        <p style="margin-top: 0; font-size: 0.75em; color: #666;">Hackathon</p>
-                    </div>
-                </div>
-            </div>
-            -->
-
-            <div style="margin: 2em 0;">
-                <a href="https://student.mit.edu/cgi-docs/shrwstop.html" style="display: inline-block; background: #0076C0; color: white; padding: 1em 2em; border-radius: 4px; font-weight: bold; text-decoration: none;">Pre-register for MLNI NOW &rarr;</a>
-            </div>
         </div>
     </div>
 
     <!-- Course Timeline -->
-    <div class="container" style="margin-top: 40px;">
-        <div class="col-md-10 col-md-offset-1">
-            <h2>Course Timeline</h2>
-            <hr>
+    <div class="container" style="margin-top: 0px;">
+        <div class="col-md-11 col-md-offset-0" style="margin: 0 auto; float: none;">
+            <h3 id="schedule">Schedule</h3>
+            <table class="schedule" align="center" border="1">
+                <tbody>
+                    <tr>
+                        <th width="10%">Date</th>
+                        <th width="50%">Topics</th>
+                        <th width="40%">Assignments</th>
+                    </tr>
+                    
+                    <!-- Pre-Course -->
+                    <tr>
+                        <td colspan="3" class="schedule_week" align="center">Pre-Course</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date" align="left">Before Jan 16, 2026</td>
+                        <td data-label="Topics" align="left">
+                        </td>
+                        <td data-label="Assignments" align="left">
+                            <strong>Reading (Optional):</strong><br>
+                            Short videos: Neuralink, Synchron, Precision Neuroscience, Emotiv, Neurable (mix of invasive & non-invasive devices)
+                            <br><br>
+                            <strong>Due: Jan 16, 11:59PM</strong><br>
+                            <ul>
+                                <li>Student background survey (Demographics, Questions for JA)</li>
+                                <li>Optional: BrainStorm 2026 hackathon sign-up</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-            <!-- Pre-Course -->
-            <div class="session-block">
-                <h3>Pre-Course</h3>
-        <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learning Objectives</h4>
-                        <ul>
-                            <li>Aware of who the guest speakers / companies are and ready to appreciate the content they will bring</li>
-                        </ul>
+                    <!-- Day 1 -->
+                    <tr>
+                        <td colspan="3" class="schedule_week" align="center">Day 1: Introduction to Neural Interfaces</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date" align="left">Monday<br>Jan 19, 2026<br>10AM-12PM</td>
+                        <td data-label="Topics" align="left">
+                            <strong>Lecture (10:05-11:15 AM):</strong><br>
+                            Machine Learning for Neural Interfaces
+                            <ul>
+                                <li>Welcome & Axioms of BCI</li>
+                                <li>Conscious experience in the brain</li>
+                                <li>Basics of neural computation</li>
+                                <li>Types of signals (EEG, iEEG, sEEG, ECoG)</li>
+                                <li>Brain decoding challenges</li>
+                            </ul>
+                            <strong>Guest Speaker (11:15-11:55 AM):</strong><br>
+                            Dr. Joshua Aronson
+                            <ul>
+                                <li>iEEG hardware & clinical use</li>
+                                <li>Patient outcomes & Q&A</li>
+                            </ul>
+                        </td>
+                        <td data-label="Assignments" align="left">
+                            <strong>Reading (Optional):</strong><br>
+                            Intro to electrophysiology
+                            <br><br>
+                            <strong>Due: Jan 19, 11:59PM</strong>
+                            <ul>
+                                <li>Exit Survey 1</li>
+                            </ul>
+                            <strong>Due: Jan 20, 11:59PM</strong>
+                            <ul>
+                                <li><strong>Lab 1:</strong> Load, analyze, and compare EEG/iEEG data
+                                    <ul>
+                                        <li>Access datasets</li>
+                                        <li>Basic preprocessing</li>
+                                        <li>Compare signal properties</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                        <h4>Assignments/Labs</h4>
-                        <p><strong>Due: Jan 16, 11:59PM</strong></p>
-                        <ul>
-                            <li>Student background survey (Demographics, Questions for JA)</li>
-                            <li>Optional: BrainStorm 2026 hackathon sign-up</li>
-                        </ul>
+                    <!-- Day 2 -->
+                    <tr>
+                        <td colspan="3" class="schedule_week" align="center">Day 2: Signal Processing & ML for Neural Data</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date" align="left">Tuesday<br>Jan 20, 2026<br>10AM-12PM</td>
+                        <td data-label="Topics" align="left">
+                            <strong>Lecture (10:05-11:15 AM):</strong><br>
+                            Decrypting the Neural Code with ML
+                            <ul>
+                                <li>ML pipeline in BCI</li>
+                                <li>Signal pre-processing</li>
+                                <li>ML paradigms: Supervised, Unsupervised, Self-supervised</li>
+                                <li>Open-source tools (neuroprobe, crane, brainsets)</li>
+                            </ul>
+                            <strong>Guest Speakers:</strong>
+                            <ul>
+                                <li><strong>11:15-11:35 AM:</strong> Chris Wang, MIT - BrainTreebank</li>
+                                <li><strong>11:35-11:55 AM:</strong> Neuralink (TBD)</li>
+                            </ul>
+                            <strong>Office Hours:</strong> Lab 1 (Time & Room TBD)
+                        </td>
+                        <td data-label="Assignments" align="left">
+                            <strong>Reading (Optional):</strong><br>
+                            Technical documentation: Neuroprobe, Crane, ieeg-data, temporaldata
+                            <br><br>
+                            <strong>Due: Jan 20, 11:59PM</strong>
+                            <ul>
+                                <li>Exit Survey 2</li>
+                            </ul>
+                            <strong>Due: Jan 22, 11:59PM</strong>
+                            <ul>
+                                <li><strong>Lab 2:</strong> Build a simple decoding model
+                                    <ul>
+                                        <li>Prepare training + test sets</li>
+                                        <li>Train supervised decoder</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                        <h4>Reading (Optional)</h4>
-                        <p>Short videos: Neuralink, Synchron, Precision Neuroscience, Emotiv, Neurable (mix of invasive & non-invasive devices)</p>
-                    </div>
-                </div>
-            </div>
+                    <!-- Day 3 -->
+                    <tr>
+                        <td colspan="3" class="schedule_week" align="center">Day 3: Brain Foundation Models</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date" align="left">Wednesday<br>Jan 21, 2026<br>10AM-12PM</td>
+                        <td data-label="Topics" align="left">
+                            <strong>Lecture (10:05-11:15 AM):</strong><br>
+                            Brain Foundation Models
+                            <ul>
+                                <li>What are BFMs & why they matter</li>
+                                <li>Pre-training for neural signals</li>
+                                <li>Self-supervised objectives</li>
+                                <li>Current challenges: Variable electrode placement, brain idiosyncrasies</li>
+                            </ul>
+                            <strong>Guest Speakers:</strong>
+                            <ul>
+                                <li><strong>11:15-11:35 AM:</strong> Synchron (TBD)</li>
+                                <li><strong>11:35-11:55 AM:</strong> Meta (TBD)</li>
+                            </ul>
+                        </td>
+                        <td data-label="Assignments" align="left">
+                            <strong>Reading (Optional):</strong><br>
+                            Foundation model papers from active BFM research groups
+                            <br><br>
+                            <strong>Due: Jan 21, 11:59PM</strong>
+                            <ul>
+                                <li>Exit Survey 3</li>
+                            </ul>
+                        </td>
+                    </tr>
 
-            <!-- Day 1 -->
-            <div class="session-block">
-                <h3>Day 1 - Monday, January 19, 2026 (10AM-12PM)</h3>
-        <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learning Objectives</h4>
-                        <p>By the end of the session, you are:</p>
-                        <ul>
-                            <li>Excited about ML for Neural Interfaces (both the field and the class)</li>
-                            <li>Aware of the scope, logistics, grading criteria and outline of this course</li>
-                            <li>Able to articulate how the person's conscious experience and intent interacts with measurable physical processes in the brain, and vice versa</li>
-                            <li>Aware of the current State of the Art in Brain-Computer Interfaces</li>
-                            <li>Acquainted with the bare basics of the dynamical systems framework and of computational architecture of the brain: neurons, synapses, sensory and motor pathways</li>
-                            <li>Equipped with knowledge of how intracranial electroencephalography (iEEG) works and how it relates to ongoing processes in the brain</li>
-                            <li>Prepared for succeeding with the first lab assignment: loading and manipulating human neural data</li>
-                        </ul>
+                    <!-- Day 4 -->
+                    <tr>
+                        <td colspan="3" class="schedule_week" align="center">Day 4: Future & Ethics of BCIs</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date" align="left">Thursday<br>Jan 22, 2026<br>10AM-12PM</td>
+                        <td data-label="Topics" align="left">
+                            <strong>Lecture (10:05-11:15 AM):</strong><br>
+                            Future and Ethics of Brain-Computer Interfaces
+                            <ul>
+                                <li>Key BCI research directions</li>
+                                <li>Technical frontiers: Decoding, BFMs, alignment</li>
+                                <li>Ethical concerns: privacy, autonomy, neuro-rights</li>
+                                <li>BCI dependency & impact</li>
+                                <li>Role of BCI in the AI age</li>
+                            </ul>
+                            <strong>Guest Speaker (11:15-11:55 AM):</strong><br>
+                            Dr. Nataliya Kosmyna
+                            <ul>
+                                <li>Neuroethics</li>
+                                <li>Student discussion/debate</li>
+                            </ul>
+                            <strong>Office Hours:</strong> Lab 2 (Time & Room TBD)<br>
+                            <strong>After Class (Optional):</strong> MIT HTIC Presentation
+                        </td>
+                        <td data-label="Assignments" align="left">
+                            <strong>Reading (Optional):</strong>
+                            <ul>
+                                <li>NYTimes: Big Tech Wants Direct Access to Our Brains</li>
+                                <li>Kunz et al. (2025): Inner speech in motor cortex</li>
+                                <li>Zheng & Meister (2024): The Unbearable Slowness of Being</li>
+                            </ul>
+                            <br>
+                            <strong>Due: Jan 22, 11:59PM</strong>
+                            <ul>
+                                <li>Exit Survey 4 (Overall course feedback)</li>
+                            </ul>
+                            <strong>Due: Feb 1, 11:59PM</strong>
+                            <ul>
+                                <li><strong>Lab 3:</strong> Self-supervised pretraining
+                                    <ul>
+                                        <li>Implement pretraining objective</li>
+                                        <li>Show decoding improvement</li>
+                                        <li>Downstream task evaluation</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
 
-                        <h4>Lecture (10:05 - 11:15 AM): Machine Learning for Neural Interfaces</h4>
-                        <ul>
-                            <li>Welcome speech</li>
-                            <li>Axioms of BCI</li>
-                            <li>Manifestation of conscious experience in the brain</li>
-                            <li>Eddy Chang speech decoding demo</li>
-                            <li>Neuralink cursor & robot demo</li>
-                            <li>Modulation of conscious experience through brain stimulation</li>
-                            <li>SEEG stimulation demo (amygdala stimulation)</li>
-                            <li>Logistics and scope of the class (content, grading, etc)</li>
-                            <li>Basics of neural computation: neurons, neural circuits, sensory and motor pathways</li>
-                            <li>Types of signals (spikes, EEG, iEEG, sEEG, ECoG, EMG etc.)</li>
-                            <li>Hardware</li>
-                            <li>Why neural data are different from standard ML data (noise, artifacts)</li>
-                            <li>Challenges in brain decoding (representation drift, cross-session, cross-task generalization)</li>
-                        </ul>
-
-                        <h4>Guest Speaker (11:15 - 11:55 AM): Dr. Joshua Aronson</h4>
-                        <ul>
-                            <li>Motivation talk</li>
-                            <li>Overview of acquisition hardware (EEG caps, depth electrodes, grids, stentrodes)</li>
-                            <li>Demo of iEEG devices</li>
-                            <li>Real-world clinical use of iEEG</li>
-                            <li>Patient outcomes</li>
-                            <li>Q&A with students</li>
-                        </ul>
-
-                        <h4>Assignments/Labs</h4>
-                        <p><strong>Due: Jan 19, 11:59PM</strong></p>
-                        <ul>
-                            <li>Exit Survey 1 (10 min): Session Feedback, Questions for Guest Speaker</li>
-                        </ul>
-                        <p><strong>Due: Jan 20, 11:59PM</strong></p>
-                        <ul>
-                            <li><strong>Lab 1:</strong> Load, analyze, and compare EEG/iEEG data
-                                <ul>
-                                    <li>Access EEG/iEEG from open or partner datasets</li>
-                                    <li>Basic preprocessing (filtering, referencing, masking for Lab 2)</li>
-                                    <li>Compare signal properties between iEEG and EEG</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h4>Reading (Optional)</h4>
-                        <p>Intro to electrophysiology (short survey paper?)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Day 2 -->
-            <div class="session-block">
-                <h3>Day 2 - Tuesday, January 20, 2026 (10AM-12PM)</h3>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learning Objectives</h4>
-                        <p>By the end of the session, you are:</p>
-                        <ul>
-                            <li>Equipped with a repertoire of signal processing and modeling methods for iEEG that you can select and evaluate based on the problem at hand</li>
-                            <li>Comfortable to start using open source tools and benchmarks: neuroprobe, temporaldata, brainsets, torch-brain, crane</li>
-                            <li>Know about the largest open source iEEG datasets and how to access them in crane through ieeg-data with brainsets</li>
-                            <li>Prepared to succeed on the second lab assignment: training a small foundation model of neural activity</li>
-                        </ul>
-
-                        <h4>Lecture (10:05 - 11:15 AM): Decrypting the Neural Code with ML</h4>
-                        <ul>
-                            <li>Overview of the ML pipeline in BCI (data → preprocess → model → evaluation)</li>
-                            <li>Signal pre-processing of iEEG data</li>
-                            <li>ML paradigms for BCI and examples:
-                                <ul>
-                                    <li>Supervised (motor intent decoding)</li>
-                                    <li>Unsupervised (clustering of seizure vs healthy events)</li>
-                                    <li>Self-supervised (next brain sequence prediction)</li>
-                                </ul>
-                            </li>
-                            <li>Open-source software stacks (neuroprobe, temporaldata, brainsets, torch-brain, crane, MNE)</li>
-                        </ul>
-
-                        <h4>Optional Office Hours: Lab 1</h4>
-                        <p>Time & Room TBD</p>
-
-                        <h4>Guest Speakers</h4>
-                        <ul>
-                            <li><strong>11:15AM - 11:35AM:</strong> Chris Wang, MIT - BrainTreebank: Large-scale intracranial recordings from naturalistic language stimuli</li>
-                            <li><strong>11:35AM - 11:55AM:</strong> Neuralink (TBD)</li>
-                        </ul>
-
-                        <h4>Assignments/Labs</h4>
-                        <p><strong>Due: Jan 20, 11:59PM</strong></p>
-                        <ul>
-                            <li>Exit Survey 2 (10 min): Session Feedback, Questions for Guest Speaker, What was 1 idea from the session that you took away?</li>
-                        </ul>
-                        <p><strong>Due: Jan 22, 11:59PM</strong></p>
-                        <ul>
-                            <li><strong>Lab 2:</strong> Build a simple decoding model
-                                <ul>
-                                    <li>Prepare training + test sets from neural data</li>
-                                    <li>Train a basic supervised decoder (MLP / CNN?)</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h4>Reading (Optional)</h4>
-                        <p>Review technical documentation of open source tools: Neuroprobe, Crane, ieeg-data, temporaldata</p>
-            </div>
-        </div>
-            </div>
-
-            <!-- Day 3 -->
-            <div class="session-block">
-                <h3>Day 3 - Wednesday, January 21, 2026 (10AM-12PM)</h3>
-        <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learning Objectives</h4>
-                        <p>By the end of the session, you are:</p>
-                        <ul>
-                            <li>Able to articulate what the term "Brain Foundation Model" means, and why they matter</li>
-                            <li>Can outline and discuss the various use cases for foundation models of neural activity: feature extraction, downstream adaptation, brain response modeling, stimulation optimization, alignment of brains in latent space, etc.</li>
-                            <li>Know the self-supervised learning techniques that can be used in building brain decoding models</li>
-                            <li>Oriented in the current state of BFM research, and active research groups in the space</li>
-                        </ul>
-
-                        <h4>Lecture (10:05 - 11:15 AM): Brain Foundation Models</h4>
-                        <ul>
-                            <li>What are Brain Foundation Models (BFMs) & why they matter</li>
-                            <li>What pre-training means for neural signals</li>
-                            <li>Self-supervised objectives for brain data</li>
-                            <li>Current challenges in building BFMs
-                                <ul>
-                                    <li>Variable electrode placement</li>
-                                    <li>Idiosyncrasies in brains</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h4>Guest Speakers</h4>
-                        <ul>
-                            <li><strong>11:15AM - 11:35AM:</strong> Synchron (TBD)</li>
-                            <li><strong>11:35AM - 11:55AM:</strong> Meta (TBD)</li>
-                            <li><strong>Backup:</strong> Neurable</li>
-                        </ul>
-
-                        <h4>Assignments/Labs</h4>
-                        <p><strong>Due: Jan 21, 11:59PM</strong></p>
-                        <ul>
-                            <li>Exit Survey 3 (10 min): Session Feedback, Questions for Guest Speaker</li>
-                        </ul>
-
-                        <h4>Reading (Optional)</h4>
-                        <p>TODO: Maybe foundation model papers from currently active groups in the BFM space?</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Day 4 -->
-            <div class="session-block">
-                <h3>Day 4 - Thursday, January 22, 2026 (10AM-12PM)</h3>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learning Objectives</h4>
-                        <p>By the end of the session, you are:</p>
-                        <ul>
-                            <li>Acquainted with current state of the art in neurotechnology and its implications for enabling next-generation brain research and neural interfaces</li>
-                            <li>Oriented in the space of current open questions in the field and active research directions</li>
-                            <li>Empowered with an opportunity to meaningfully contribute to this field in the future</li>
-                            <li>Have a clear path of how to learn more for each potential research direction you might want to contribute</li>
-                            <li>Able to discuss how brain-computer interfaces are already impacting the lives of people today, and what is likely to happen once they improve</li>
-                            <li>Can articulate a nuanced opinion on the risks and benefits of developing brain-computer interfaces</li>
-                        </ul>
-
-                        <h4>Lecture (10:05 - 11:15 AM): Future and Ethics of Brain-Computer Interfaces</h4>
-                        <ul>
-                            <li>Map of key BCI research directions and current SOTA</li>
-                            <li>Technical frontiers: Decoding, BFMs, multimodal alignment, cross-subject alignment, stimulation optimization</li>
-                            <li>Ethical concerns (privacy, autonomy, agency, neuro-rights)</li>
-                            <li>Dependency on BCI: Noland Arbaugh's story</li>
-                            <li>Role of BCI in the AI age</li>
-                        </ul>
-
-                        <h4>Optional Office Hours: Lab 2</h4>
-                        <p>Time & Room TBD</p>
-
-                        <h4>Guest Speaker (11:15 - 11:55 AM): Dr. Nataliya Kosmyna</h4>
-                        <ul>
-                            <li>Neuroethics</li>
-                            <li>Student discussion / debate on safety, privacy, and societal impact</li>
-                        </ul>
-
-                        <h4>After Class (Optional)</h4>
-                        <p>Presentation by the MIT HTIC?</p>
-
-                        <h4>Assignments/Labs</h4>
-                        <p><strong>Due: Jan 22, 11:59PM</strong></p>
-                        <ul>
-                            <li>Exit Survey 4 (10 min): Session Feedback, Overall Course Feedback, What were the top 5 ideas you took away from the course?</li>
-                        </ul>
-                        <p><strong>Due: Feb 1, 11:59PM</strong></p>
-                        <ul>
-                            <li><strong>Lab 3:</strong> Improve it using self-supervised pretraining
-                                <ul>
-                                    <li>Implement a simple pretraining objective</li>
-                                    <li>Pretrain on another iEEG session and show decoding improvement</li>
-                                    <li>Connect with lab 2 (downstream task evaluation)</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h4>Reading (Optional)</h4>
-                        <ul>
-                            <li>NYTimes: Big Tech Wants Direct Access to Our Brains</li>
-                            <li>Kunz, Erin M., et al. (2025) Inner speech in motor cortex and implications for speech neuroprostheses</li>
-                            <li>Zheng & Meister et al. (2024): The Unbearable Slowness of Being</li>
-                        </ul>
-            </div>
-        </div>
-            </div>
-
-            <!-- Days 5-6 -->
-            <div class="session-block">
-                <h3>Days 5-6 - Friday & Saturday, January 23-24, 2026 (9AM-5PM)</h3>
-                <p><strong>Location:</strong> 1 Memorial Drive</p>
-        <div class="row">
-                    <div class="col-md-12">
-                        <h4>Learning Objectives</h4>
-                        <ul>
-                            <li>Students apply their skills in a real-world setting</li>
-                        </ul>
-
-                        <h4>BrainStorm 2026 Hackathon</h4>
-                        <p><a href="#">Eventbrite sign up</a></p>
-                        <ul>
-                            <li>Organizers introduce the hackathon, give a keynote research talk and onboarding and outline the challenge to the teams</li>
-                        </ul>
-
-                        <h4>Guest Speaker</h4>
-                        <p>Precision Neuroscience</p>
-
-                        <h4>Assignments/Labs</h4>
-                        <p><strong>Due: Feb 1, 11:59PM - Last day of grading (no extensions)</strong></p>
-                        <p><strong>Alternative to Hackathon: MLNI Research Proposal</strong></p>
-                        <ul>
-                            <li>A realistic and plausible research project in the field of Machine Learning for Neural Interfaces
-                                <ul>
-                                    <li>The project scientific question and goal</li>
-                                    <li>The planned steps to be taken, and experiments to run</li>
-                                    <li>Proposed timeline</li>
-                                </ul>
-                            </li>
-                        </ul>
-            </div>
+                    <!-- Days 5-6 -->
+                    <tr>
+                        <td colspan="3" class="schedule_week" align="center">Days 5-6: BrainStorm 2026 Hackathon</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Date" align="left">Friday & Saturday<br>Jan 23-24, 2026<br>9AM-5PM<br><br><strong>Location:</strong><br>1 Memorial Drive</td>
+                        <td data-label="Topics" align="left">
+                            <strong>BrainStorm 2026 Hackathon</strong>
+                            <ul>
+                                <li>Keynote research talk</li>
+                                <li>Team onboarding</li>
+                                <li>Challenge outline</li>
+                                <li>Team projects</li>
+                            </ul>
+                            <strong>Guest Speaker:</strong><br>
+                            Precision Neuroscience
+                            <br><br>
+                            <a href="#">Eventbrite sign up</a>
+                        </td>
+                        <td data-label="Assignments" align="left">
+                            <strong>Due: Feb 1, 11:59PM</strong><br>
+                            <em>(Last day of grading - no extensions)</em>
+                            <br><br>
+                            <strong>Alternative to Hackathon:</strong>
+                            <ul>
+                                <li>MLNI Research Proposal including:
+                                    <ul>
+                                        <li>Scientific question & goal</li>
+                                        <li>Planned steps & experiments</li>
+                                        <li>Proposed timeline</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-            <!-- Resources -->
-            <div style="margin-top: 40px;">
-                <h3>MIT Labs/Groups Working on ML for Neural Interfaces</h3>
-                <ul>
-                    <li>Boris Katz</li>
-                    <li>Ila Fiete</li>
-                    <li>Paul Liang</li>
-                </ul>
-            </div>
-
-        </div>
+    <div style="text-align: center; margin-top: 36px; color: #888; font-size: 15px;">
+        Website by <a href="https://azaho.org/" target="_blank" rel="noopener" style="color: #0076C0; text-decoration: underline;">Andrii Zahorodnii</a>
     </div>
-
-    <style>
-        .session-block {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-left: 4px solid #0076C0;
-        }
-        .session-block h3 {
-            color: #0076C0;
-            margin-top: 0;
-        }
-        .session-block h4 {
-            margin-top: 20px;
-            color: #333;
-        }
-        .session-block ul {
-            margin-bottom: 15px;
-        }
-    </style>
-
 </body>
 </html>

@@ -11,6 +11,7 @@ body {
 
 p {
     font-size: 17px;
+    line-height: 1.5;
 }
 
 img {
@@ -31,14 +32,14 @@ img {
 .session-block li,
 .container > .col-md-10 > li {
     display: list-item;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 /* Nested lists */
 .session-block ul ul,
 .container ul ul {
     list-style-type: circle;
-    margin: 0.5em 0;
+    margin: 0.2em 0;
 }
 
 /* If you have navigation menus, add specific classes for them */
@@ -101,6 +102,58 @@ li a {
   }
 }
 
+/* Schedule table styles */
+table.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+table.schedule td, table.schedule th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+table.schedule th {
+    background-color: #0076C0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.schedule .schedule_week {
+    background-color: #0076C0;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table.schedule tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table.schedule ul {
+    margin: 0.3em 0;
+    padding-left: 20px;
+}
+
+table.schedule li {
+    margin-bottom: 0.2em;
+}
+
+table.schedule a {
+    color: #0076C0;
+    text-decoration: none;
+}
+
+table.schedule a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .about, .about_img {
       width: 100%;
@@ -117,7 +170,7 @@ li a {
       max-width: 250px;
       margin: 0 auto;
   }
-  .col-md-offset-1 {
+  .col-md-offset-0 {
       margin-left: 0;
   }
   ul {
@@ -134,5 +187,75 @@ li a {
   .hero-banner {
       padding-left: 0 !important;
       padding-right: 0 !important;
+      flex: 0 0 100% !important;
+  }
+  
+  .hero-section {
+      flex-direction: column !important;
+  }
+  
+  /* Make instructor section responsive */
+  .course-info ul {
+      padding-left: 20px !important;
+  }
+  
+  /* Make teaching team cards responsive - stack on mobile */
+  div[style*="grid-template-columns: repeat(3, 1fr)"] {
+      grid-template-columns: 1fr !important;
+  }
+  
+  /* Make schedule table responsive */
+  table.schedule, table.schedule tbody, table.schedule tr, table.schedule td {
+      display: block;
+      width: 100%;
+  }
+  
+  /* Hide the header row on mobile */
+  table.schedule thead,
+  table.schedule th {
+      display: none;
+  }
+  
+  table.schedule tr {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      background-color: white !important;
+  }
+  
+  table.schedule td {
+      text-align: left;
+      padding: 10px;
+      position: relative;
+      border: none !important;
+      border-bottom: 1px solid #f0f0f0 !important;
+  }
+  
+  table.schedule td:last-child {
+      border-bottom: none !important;
+  }
+  
+  /* Don't show labels for schedule_week rows */
+  table.schedule td.schedule_week {
+      text-align: center;
+      font-size: 1.1em;
+      border-bottom: none !important;
+  }
+  
+  table.schedule td.schedule_week:before {
+      display: none;
+  }
+  
+  /* Add labels before each cell */
+  table.schedule td[data-label]:before {
+      content: attr(data-label) ": ";
+      font-weight: bold;
+      color: #0076C0;
+      display: inline;
+      margin-right: 5px;
+  }
+  
+  /* Don't show label if content is empty */
+  table.schedule td:empty:before {
+      display: none;
   }
 }
