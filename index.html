@@ -173,7 +173,7 @@
                     
                     <!-- Pre-Course -->
                     <tr>
-                        <td colspan="3" class="schedule_week" align="center">Pre-Course</td>
+                        <td colspan="3" class="schedule_week" align="center">Course Preparation</td>
                     </tr>
                     <tr>
                         <td data-label="Date" align="left">Before Jan 16, 2026</td>
@@ -185,43 +185,51 @@
                             <br><br>
                             <strong>Due: Jan 16, 11:59PM</strong><br>
                             <ul>
-                                <li>Student background survey (Demographics, Questions for JA)</li>
-                                <li>Optional: BrainStorm 2026 hackathon sign-up</li>
+                                <li>Student background survey</li>
+                                <li>Optional: BrainStorm 2026 hackathon sign-up (see below)</li>
                             </ul>
                         </td>
                     </tr>
 
                     <!-- Day 1 -->
                     <tr>
-                        <td colspan="3" class="schedule_week" align="center">Day 1: Introduction to Neural Interfaces</td>
+                        <td colspan="3" class="schedule_week" align="center">Day 1: Introduction to Machine Learning for Neural Interfaces</td>
                     </tr>
                     <tr>
                         <td data-label="Date" align="left">Monday<br>Jan 19, 2026<br>10AM-12PM</td>
                         <td data-label="Topics" align="left">
-                            <strong>Lecture (10:05-11:15 AM):</strong><br>
-                            Machine Learning for Neural Interfaces
+                            <strong>Lecture:</strong>
                             <ul>
-                                <li>Welcome & Axioms of BCI</li>
-                                <li>Conscious experience in the brain</li>
-                                <li>Basics of neural computation</li>
-                                <li>Types of signals (EEG, iEEG, sEEG, ECoG)</li>
-                                <li>Brain decoding challenges</li>
+                                <li>Welcome; Course Overview, Logistics, Scope, Grading</li>
+                                <li>Axioms of Neural Interfaces</li>
+                                <ul>
+                                    <li>Manifestation of conscious experience in the brain (demo)</li>
+                                    <li>Modulation of conscious experience through brain interaction (demo)</li>
+                                </ul>
+                                <li>Basics of neural computation: neurons, neural circuits, sensory and motor pathways.</li>
+                                <li>Types of neural signals and hardware (spiking data, EEG, iEEG, sEEG, ECoG)</li>
+                                <li>Challenges in Brain decoding</li>
                             </ul>
-                            <strong>Guest Speaker (11:15-11:55 AM):</strong><br>
-                            Dr. Joshua Aronson
+                            <br/>
+                            <strong>Guest Speaker:
+                            <a href="https://www.linkedin.com/in/joshua-aronson-md-faans-26571318/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Dr. Joshua Aronson, MD, FAANS</a>
+                            </strong>
+                            <br/>
+                            <em>Director of Epilepsy Surgery, Beth Israel Deaconess Medical Center; Assistant Professor, Harvard Medical School</em>
                             <ul>
                                 <li>iEEG hardware & clinical use</li>
-                                <li>Patient outcomes & Q&A</li>
+                                <li>Patient outcomes and Q&A with students</li>
                             </ul>
                         </td>
                         <td data-label="Assignments" align="left">
                             <strong>Reading (Optional):</strong><br>
-                            Intro to electrophysiology
+                            Scientific Article: Intro to Human Electrophysiology
                             <br><br>
                             <strong>Due: Jan 19, 11:59PM</strong>
                             <ul>
                                 <li>Exit Survey 1</li>
                             </ul>
+                            <br/>
                             <strong>Due: Jan 20, 11:59PM</strong>
                             <ul>
                                 <li><strong>Lab 1:</strong> Load, analyze, and compare EEG/iEEG data
@@ -237,24 +245,26 @@
 
                     <!-- Day 2 -->
                     <tr>
-                        <td colspan="3" class="schedule_week" align="center">Day 2: Signal Processing & ML for Neural Data</td>
+                        <td colspan="3" class="schedule_week" align="center">Day 2: Decrypting the Neural Code with ML</td>
                     </tr>
                     <tr>
                         <td data-label="Date" align="left">Tuesday<br>Jan 20, 2026<br>10AM-12PM</td>
                         <td data-label="Topics" align="left">
-                            <strong>Lecture (10:05-11:15 AM):</strong><br>
-                            Decrypting the Neural Code with ML
+                            <strong>Lecture:</strong>
                             <ul>
-                                <li>ML pipeline in BCI</li>
-                                <li>Signal pre-processing</li>
+                                <li>ML pipelines in Brain-Computer Interfaces (BCI)</li>
                                 <li>ML paradigms: Supervised, Unsupervised, Self-supervised</li>
-                                <li>Open-source tools (neuroprobe, crane, brainsets)</li>
+                                <li>Signal pre-processing for neural data</li>
+                                <li>Open-source tools (neuroprobe, crane, temporaldata etc)</li>
                             </ul>
-                            <strong>Guest Speakers:</strong>
-                            <ul>
+                            <br/>
+                            <strong>Guest Speaker(s) TBD</strong>
+                            <!-- <ul>
                                 <li><strong>11:15-11:35 AM:</strong> Chris Wang, MIT - BrainTreebank</li>
                                 <li><strong>11:35-11:55 AM:</strong> Neuralink (TBD)</li>
-                            </ul>
+                            </ul> -->
+                            <br/>
+                            <br/>
                             <strong>Office Hours:</strong> Lab 1 (Time & Room TBD)
                         </td>
                         <td data-label="Assignments" align="left">
@@ -265,6 +275,7 @@
                             <ul>
                                 <li>Exit Survey 2</li>
                             </ul>
+                            <br/>
                             <strong>Due: Jan 22, 11:59PM</strong>
                             <ul>
                                 <li><strong>Lab 2:</strong> Build a simple decoding model
@@ -284,19 +295,29 @@
                     <tr>
                         <td data-label="Date" align="left">Wednesday<br>Jan 21, 2026<br>10AM-12PM</td>
                         <td data-label="Topics" align="left">
-                            <strong>Lecture (10:05-11:15 AM):</strong><br>
-                            Brain Foundation Models
+                            <strong>Lecture:</strong>
                             <ul>
-                                <li>What are BFMs & why they matter</li>
+                                <li>
+                                    What are Brain Foundation Models (BFMs) & why they matter
+                                    <ul>
+                                        <li>Feature extraction and Downstream adaptation</li>
+                                        <li>Brain response modeling and Stimulation optimization</li>
+                                        <li>Alignment of brains in latent space and Other emerging applications</li>
+                                    </ul>
+                                </li>
                                 <li>Pre-training for neural signals</li>
                                 <li>Self-supervised objectives</li>
-                                <li>Current challenges: Variable electrode placement, brain idiosyncrasies</li>
+                                <li>Current challenges in building Brain Foundation Models:
+                                    <ul>
+                                        <li>Variable electrode placement</li>
+                                        <li>Brain idiosyncrasies</li>
+                                        <li>Other sources of recording variability</li>
+                                    </ul>
+                                </li>
                             </ul>
-                            <strong>Guest Speakers:</strong>
-                            <ul>
-                                <li><strong>11:15-11:35 AM:</strong> Synchron (TBD)</li>
-                                <li><strong>11:35-11:55 AM:</strong> Meta (TBD)</li>
-                            </ul>
+                            <br/>
+                            <strong>Guest Speaker: Dr. Peter Yoo </strong><br>
+                            <em>Head of Neuroscience & Algorithms, Synchron</em>
                         </td>
                         <td data-label="Assignments" align="left">
                             <strong>Reading (Optional):</strong><br>
@@ -311,28 +332,26 @@
 
                     <!-- Day 4 -->
                     <tr>
-                        <td colspan="3" class="schedule_week" align="center">Day 4: Future & Ethics of BCIs</td>
+                        <td colspan="3" class="schedule_week" align="center">Day 4: Future and Ethics of Brain-Computer Interfaces</td>
                     </tr>
                     <tr>
                         <td data-label="Date" align="left">Thursday<br>Jan 22, 2026<br>10AM-12PM</td>
                         <td data-label="Topics" align="left">
-                            <strong>Lecture (10:05-11:15 AM):</strong><br>
-                            Future and Ethics of Brain-Computer Interfaces
+                            <strong>Lecture:</strong>
                             <ul>
                                 <li>Key BCI research directions</li>
                                 <li>Technical frontiers: Decoding, BFMs, alignment</li>
                                 <li>Ethical concerns: privacy, autonomy, neuro-rights</li>
                                 <li>BCI dependency & impact</li>
-                                <li>Role of BCI in the AI age</li>
+                                <li>Role of BCI in the age of AGI</li>
                             </ul>
-                            <strong>Guest Speaker (11:15-11:55 AM):</strong><br>
-                            Dr. Nataliya Kosmyna
-                            <ul>
-                                <li>Neuroethics</li>
-                                <li>Student discussion/debate</li>
-                            </ul>
-                            <strong>Office Hours:</strong> Lab 2 (Time & Room TBD)<br>
-                            <strong>After Class (Optional):</strong> MIT HTIC Presentation
+                            <br/>
+                            <strong>Guest Speaker(s) TBD</strong><br>
+                            <br/>
+                            <strong>Office Hours:</strong> Lab 3 (Time & Room TBD)
+                            <br/><br/>
+                            <strong>After Class (Optional):</strong>
+                            Presentation by <a href="https://sites.mit.edu/htic/" target="_blank" rel="noopener noreferrer">MIT Human Technology Integration club</a>
                         </td>
                         <td data-label="Assignments" align="left">
                             <strong>Reading (Optional):</strong>
@@ -346,6 +365,7 @@
                             <ul>
                                 <li>Exit Survey 4 (Overall course feedback)</li>
                             </ul>
+                            <br/>
                             <strong>Due: Feb 1, 11:59PM</strong>
                             <ul>
                                 <li><strong>Lab 3:</strong> Self-supervised pretraining
@@ -361,28 +381,33 @@
 
                     <!-- Days 5-6 -->
                     <tr>
-                        <td colspan="3" class="schedule_week" align="center" id="hackathon">Days 5-6: BrainStorm 2026 Hackathon</td>
+                        <td colspan="3" class="schedule_week" align="center" id="hackathon">Days 5-6: BrainStorm 2026 Hackathon, hosted by <a href="https://precisionneuro.io/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">Precision Neuroscience</a></td>
                     </tr>
                     <tr>
                         <td data-label="Date" align="left">Friday & Saturday<br>Jan 23-24, 2026<br>9AM-5PM<br><br><strong>Location:</strong><br>1 Memorial Drive</td>
                         <td data-label="Topics" align="left">
                             <strong>BrainStorm 2026 Hackathon</strong>
-                            <ul>
-                                <li>Keynote research talk</li>
-                                <li>Team onboarding</li>
-                                <li>Challenge outline</li>
-                                <li>Team projects</li>
-                            </ul>
-                            <strong>Guest Speaker:</strong><br>
-                            Precision Neuroscience
-                            <br><br>
-                            <a href="#">Eventbrite sign up</a>
+                            <br/>
+                            Brain Storm 2026 is a two-day, in-person hackathon organized by Precision Neuroscience
+                            where students and post-docs from across Boston’s top universities come together to design 
+                            and prototype new tools in brain–computer interfaces (BCI), AI, signal processing, and hardware.
+                            This event gives you access to real neural data, expert mentors, and a chance at $5,000 in prizes.
+                            
+                            <br/>
+                            <br/>
+                            <a href="https://www.eventbrite.com/e/brain-storm-bci-hackathon-2026-tickets-1974892685184" target="_blank" rel="noopener noreferrer">Eventbrite Page and Sign Up &rarr;</a>
+                            
+                            <br/>
+                            <br/>
+                            <strong>Keynote Speaker and Hackathon Organizer:</strong><br>
+                            <a href="https://precisionneuro.io/" target="_blank" rel="noopener noreferrer" style="">Precision Neuroscience</a>
                         </td>
                         <td data-label="Assignments" align="left">
-                            <strong>Due: Feb 1, 11:59PM</strong><br>
+                            <strong>Alternative to Hackathon Participation:</strong>
+                            <br/>
+                            <strong>Due: Feb 1, 11:59PM</strong>
+                            <br>
                             <em>(Last day of grading - no extensions)</em>
-                            <br><br>
-                            <strong>Alternative to Hackathon:</strong>
                             <ul>
                                 <li>MLNI Research Proposal including:
                                     <ul>
