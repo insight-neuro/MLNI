@@ -1,6 +1,15 @@
 
 # Machine Learning for Neural Interfaces
 
+
+
+
+
+
+
+
+
+
 ## Learning Outcomes. By the end of the session, you are:
 - Excited about ML for Neural Interfaces.
 - Able to articulate how the person's conscious experience and intent interacts with measurable physical processes in the brain, and vice versa.
